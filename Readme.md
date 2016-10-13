@@ -70,7 +70,7 @@ const loadStore = () => {
 }
 
 const storeCreator = applyMiddleware(asyncInitialState.middleware(loadStore));
-const store = storeCreator(reducer);
+const store = storeCreator(createStore)(reducer);
 ```
 
 ### Partial replace

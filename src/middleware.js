@@ -4,7 +4,7 @@ export default load => store => {
   store.dispatch({
     type: STATE_LOADING_START,
   });
-  load(store.getState()).then(
+  load(store.getState).then(
     state => {
       store.dispatch({
         type: STATE_LOADING_DONE,

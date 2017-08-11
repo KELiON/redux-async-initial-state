@@ -46,7 +46,7 @@ describe('middleware', () => {
 
 
     const load = (state) => new Promise(resolve => {
-      resolve(Object.assign(state, {
+      resolve(Object.assign(state(), {
         key2: 'z',
       }));
       expect(dispatch).to.have.been.called.with({

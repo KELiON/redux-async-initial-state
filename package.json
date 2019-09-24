@@ -1,6 +1,6 @@
 {
   "name": "redux-async-initial-state",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "It is simple redux middleware that helps you load redux initial state asynchronously",
   "main": "lib/index.js",
   "directories": {

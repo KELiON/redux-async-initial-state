@@ -39,7 +39,7 @@ const middleware = load => store => {
 
   return next => action => {
     !middleware.isLoadExecuted && handleLoad();
-    next(action);
+    return next(action);
   };
 };
 
